@@ -8,21 +8,25 @@ import java.util.Map;
 public class RepairRules extends GameDataComponent {
   private static final long serialVersionUID = 8153102637443800391L;
 
+/*
   private final Map<String, RepairRule> repairRules = new HashMap<>();
+*/
+  private final Map<String, RepairRule> fixRules = new HashMap<>();
+
 
   public RepairRules(final GameData data) {
     super(data);
   }
 
   public void addRepairRule(final RepairRule pf) {
-    repairRules.put(pf.getName(), pf);
+    fixRules.put(pf.getName(), pf);
   }
 
   public RepairRule getRepairRule(final String name) {
-    return repairRules.get(name);
+    return fixRules.get(name);
   }
 
   public Collection<RepairRule> getRepairRules() {
-    return repairRules.values();
+    return fixRules.values();
   }
 }
