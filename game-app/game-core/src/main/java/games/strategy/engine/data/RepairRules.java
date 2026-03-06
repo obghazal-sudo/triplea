@@ -8,9 +8,6 @@ import java.util.Map;
 public class RepairRules extends GameDataComponent {
   private static final long serialVersionUID = 8153102637443800391L;
 
-/*
-  private final Map<String, RepairRule> repairRules = new HashMap<>();
-*/
   private final Map<String, RepairRule> fixRules = new HashMap<>();
 
 
